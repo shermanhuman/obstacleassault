@@ -23,6 +23,8 @@ void AMovingPlatform::BeginPlay()
 void AMovingPlatform::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	// FString ActorName = GetName();
+	// UE_LOG(LogTemp, Display, TEXT("Platform %s moving."), *ActorName);
 
 	// Calculate progress based on movementRate and DeltaTime
 	progress += movementRate * DeltaTime;
